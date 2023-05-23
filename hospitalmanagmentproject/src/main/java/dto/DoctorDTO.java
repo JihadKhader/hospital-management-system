@@ -47,4 +47,8 @@ public class DoctorDTO {
 		this.doctorRoomNumber = doctorRoomNumber;
 	}
 
+	public int getId() {
+		return getDoctorId();
+	}
+
 }

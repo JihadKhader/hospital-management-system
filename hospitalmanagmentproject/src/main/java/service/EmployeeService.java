@@ -5,15 +5,16 @@ import java.util.List;
 import org.springframework.data.crossstore.ChangeSetPersister.NotFoundException;
 
 import dto.EmployeeDTO;
+import model.Employee;
 
 public interface EmployeeService {
 	EmployeeDTO getEmployeeById(Integer employeeId) throws NotFoundException;
 
-	List<EmployeeDTO> getAllEmployees();
+	List<Employee> getAllEmployees();
 
-	EmployeeDTO createEmployee(EmployeeDTO employeeDTO);
+	EmployeeDTO createEmployee(Employee employee);
 
-	EmployeeDTO updateEmployee(Integer employeeId, EmployeeDTO employeeDTO) throws NotFoundException;
+	EmployeeDTO updateEmployee(Integer employeeId, Employee employee) throws NotFoundException;
 
-	void deleteEmployee(Integer employeeId) throws NotFoundException;
+	boolean deleteEmployee(Integer employeeId) throws NotFoundException;
 }

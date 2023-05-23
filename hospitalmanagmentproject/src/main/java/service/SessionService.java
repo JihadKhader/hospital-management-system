@@ -3,15 +3,16 @@ package service;
 import java.util.List;
 
 import dto.SessionDTO;
+import model.Session;
 
 public interface SessionService {
 	SessionDTO getSessionById(Integer sessionId);
 
 	List<SessionDTO> getAllSessions();
 
-	SessionDTO createSession(SessionDTO sessionDTO);
+	SessionDTO createSession(Session session);
 
-	SessionDTO updateSession(Integer sessionId, SessionDTO sessionDTO);
+	SessionDTO updateSession(Integer sessionId, Session session);
 
-	void deleteSession(Integer sessionId);
+	boolean deleteSession(Integer sessionId);
 }

@@ -3,15 +3,16 @@ package service;
 import java.util.List;
 
 import dto.PatientRecordDTO;
+import model.PatientRecord;
 
 public interface PatientRecordService {
 	PatientRecordDTO getPatientRecordById(Integer recordId);
 
 	List<PatientRecordDTO> getAllPatientRecords();
 
-	PatientRecordDTO createPatientRecord(PatientRecordDTO patientRecordDTO);
+	PatientRecordDTO createPatientRecord(PatientRecord patientRecord);
 
-	PatientRecordDTO updatePatientRecord(Integer recordId, PatientRecordDTO patientRecordDTO);
+	PatientRecordDTO updatePatientRecord(Integer recordId, PatientRecord patientRecord);
 
-	void deletePatientRecord(Integer recordId);
+	boolean deletePatientRecord(Integer recordId);
 }
