@@ -16,22 +16,22 @@
 
 | HTTP Method | URL Path | HTTP Status Code | Description | Sample Request | Sample Response |
 |-------------|----------|-----------------|-------------|----------------|-----------------|
-| GET         | /employees/{id} | 200 OK | Get employee by ID | `GET /employees/1` | `{"id": 1, "firstName": "Jihad", "lastName": "Khader", "branch": "HR", "employeeNumber": 1212, "shift": "Day", "isDoctor": false}` |
-| POST        | /employees      | 201 Created | Create employee | `POST /employees` | `{"firstName": "Ahmad", "lastName": "Majid", "branch": "Finance", "employeeNumber": 2211, "shift": "Night", "isDoctor": false}` |
+| GET         | /employees/{id} | 200 OK | Get employee by ID | `GET /employees/1` | `{"id": 1, "firstName": "Jihad", "lastName": "Khader", "branch": "Receptionist", "employeeNumber": 1212, "shift": "Day", "isDoctor": false}` |
+| POST        | /employees      | 201 Created | Create employee | `POST /employees` | `{"firstName": "Ahmad", "lastName": "Majid", "branch": "Doctor", "employeeNumber": 2211, "shift": "Night", "isDoctor": true}` |
 | PUT         | /employees/{id} | 200 OK | Update employee by ID | `PUT /employees/1` | `SUCCESS`  |
 | DELETE      | /employees/{id} | 200 OK | Delete employee by ID | `DELETE /employees/1` | `SUCCESS` |
 
 | HTTP Method | URL Path | HTTP Status Code | Description | Sample Request | Sample Response |
 |-------------|----------|-----------------|-------------|----------------|-----------------|
-| GET         | /doctors/{id}   | 200 OK | Get doctor by ID | `GET /doctors/1` | `{"id": 1, "employeeId": 1, "isAvailable": true, "section": "Cardiology", "roomNumber": 101}` |
-| POST        | /doctors        | 201 Created | Create doctor | `POST /doctors` | `{"employeeId": 2, "isAvailable": true, "section": "Pediatrics", "roomNumber": 102}` |
+| GET         | /doctors/{id}   | 200 OK | Get doctor by ID | `GET /doctors/1` | `{"id": 5, "employeeId": 1, "isAvailable": true, "section": "Cardiology", "roomNumber": 101}` |
+| POST        | /doctors        | 201 Created | Create doctor | `POST /doctors` | `{"employeeId": 6, "isAvailable": true, "section": "Pediatrics", "roomNumber": 102}` |
 | PUT         | /doctors/{id}   | 200 OK | Update doctor by ID | `PUT /doctors/1` | `SUCCESS` |
 | DELETE      | /doctors/{id}   | 200 OK | Delete doctor by ID | `DELETE /doctors/1` | `SUCCESS` |
 
 | HTTP Method | URL Path | HTTP Status Code | Description | Sample Request | Sample Response |
 |-------------|----------|-----------------|-------------|----------------|-----------------|
-| GET         | /receptionists/{id} | 200 OK | Get receptionist by ID | `GET /receptionists/1` | `{"id": 1, "employeeId": 3}` |
-| POST        | /receptionists      | 201 Created | Create receptionist | `POST /receptionists` | `{"employeeId": 4}` |
+| GET         | /receptionists/{id} | 200 OK | Get receptionist by ID | `GET /receptionists/1` | `{"id": 1, "employeeId": 1}` |
+| POST        | /receptionists      | 201 Created | Create receptionist | `POST /receptionists` | `{"employeeId": 7}` |
 | PUT         | /receptionists/{id} | 200 OK | Update receptionist by ID | `PUT /receptionists/1` | `SUCCESS` |
 | DELETE      | /receptionists/{id} | 200 OK | Delete receptionist by ID | `DELETE /receptionists/1` | `SUCCESS` |
 
