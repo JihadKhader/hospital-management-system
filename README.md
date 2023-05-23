@@ -37,8 +37,8 @@
 
 | HTTP Method | URL Path | HTTP Status Code | Description | Sample Request | Sample Response |
 |-------------|----------|-----------------|-------------|----------------|-----------------|
-| GET         | /patients/{id} | 200 OK | Get patient by ID | `GET /patients/1` | `{"id": 1, "emergencySituation": true, "treatmentNeed": "Emergency treatment", "patientRecord": "Lorem ipsum...", "doctorId": 1, "receptionistId": 1, "medicineName": "Aspirin"}` |
-| POST        | /patients      | 201 Created | Create patient | `POST /patients` | `{"emergencySituation": false, "treatmentNeed": "Regular checkup", "patientRecord": "Lorem ipsum...", "doctorId": 2, "receptionistId": 2, "medicineName": "Paracetamol"}` |
+| GET         | /patients/{id} | 200 OK | Get patient by ID | `GET /patients/1` | `{"id": 1, "emergencySituation": true, "treatmentNeed": "Emergency treatment", "patientRecord": "4", "doctorId": 1, "receptionistId": 1, "medicineName": "Aspirin"}` |
+| POST        | /patients      | 201 Created | Create patient | `POST /patients` | `{"emergencySituation": false, "treatmentNeed": "Regular checkup", "patientRecord": "5", "doctorId": 2, "receptionistId": 2, "medicineName": "Paracetamol"}` |
 | PUT         | /patients/{id} | 204 No Content | Update patient by ID | `PUT /patients/1` | `SUCCESS` |
 | DELETE      | /patients/{id} | 204 No Content | Delete patient by ID | `DELETE /patients/1` | `SUCCESS` |
 
